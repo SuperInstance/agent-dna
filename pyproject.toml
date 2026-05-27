@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-dna"
+version = "0.1.0"
+description = "Genetic encoding for agent capabilities and behavior traits — evolve agent populations across generations."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "SuperInstance", url = "https://github.com/SuperInstance" },
+]
+keywords = ["agent", "genetic-algorithm", "evolution", "ai", "genome", "cocapn"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Repository = "https://github.com/SuperInstance/agent-dna"
+
+[tool.setuptools.packages.find]
+include = ["agent_dna*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
